@@ -1,0 +1,34 @@
+﻿@model Desaprendiendo.Services.Mail.MailConfiguration
+
+@{
+    ViewData["Title"] = "Information";
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+
+<h1>Information</h1>
+
+<h4>EMail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Information">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="CcEmail" class="control-label"></label>
+                <input asp-for="CcEmail" class="form-control" />
+                <span asp-validation-for="CcEmail" class="text-danger"></span>
+                <label asp-for="Body" class="control-label"></label>
+                <textarea asp-for="Body" class="form-control"></textarea>
+                <span asp-validation-for="Body" class="text-danger"></span>
+                <input type="submit" value="Envia" class="btn btn-primary" />
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="CategoriaFront"> Volver al inicio</a>
+</div>
+

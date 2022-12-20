@@ -1,0 +1,9 @@
+﻿
+@using Microsoft.AspNetCore.Http
+@model IEnumerable<Desaprendiendo.Models.DomainModel.Categoria>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+@await Component.InvokeAsync("CardComponent", Model.ToList().First())
+

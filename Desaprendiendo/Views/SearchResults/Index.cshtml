@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Desaprendiendo.Services.SearchService.Model.SearchResult>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<h1>Búsqueda de Cursos</h1>
+
+<table class="table table-bordered table-responsive">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=> model.Content)
+            </th>
+            <th>
+                Enlace
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.Raw(item.Content)                       
+            </td>
+            <td>
+                <a class="card-text" asp-controller=@item.Controller asp-action=@item.Action asp-route-id=@item.Parameter>Enlace</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

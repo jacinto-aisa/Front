@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.BreadCum.Bread>
+<div class="container-fluid mr-auto contenedor-general">
+    <div class="card-group">
+        @foreach (var item in Model)
+        {
+            <div class="card col-sm-2" >
+                <a asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId class="filaBreadcum">
+                    @if (item.ImagenVisible)
+                    {
+                        <img class="card-img-top" src="data:image;base64,@System.Convert.ToBase64String(item.Imagen)" />
+                    }
+                    else
+                    {
+                        <p class="tituloCursoBreadcum" >@item.Titulo</p>
+                    }
+                </a>
+            </div>
+        }
+
+    </div>
+</div>

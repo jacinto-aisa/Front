@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.Menu.Menu>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" asp-controller="CategoriaFront" asp-action="Index">
+            <img src="~/images/desaprendiendo.png" width="100" height="75" alt="Icono de Marca" class="" d-inline-block align-top">Desaprendiendo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                @foreach (var item in Model)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="CategoriaFront" asp-action=@item.Accion>@item.Titulo</a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0" asp-controller="SearchResults" asp-action="Index" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @Html.TextBox("searchedText")
+                @*<input class="form-control mr-sm-2" id="searchedText " name="searchedText " type="search" placeholder="Búsqueda" aria-label="Búsqueda">*@
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
+            </div>
+        </form>
+    </nav>
+
+

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.Lección>
+
+<div id="comments-tool">
+     @foreach (var item in Model)
+     {
+            <div>
+                <div >
+                    From:
+
+                    @Html.DisplayFor(modelItem => item.Lección1)
+                </div>
+                <div >
+                    @Html.CheckBox("Like", (bool)item.HayEjercicios)
+                </div>
+                <div >
+                    @Html.DisplayFor(modelItem => item.ComentarioHtml)
+                </div>
+                <hr>
+            </div>
+
+        }
+    </div>
+
+}
+

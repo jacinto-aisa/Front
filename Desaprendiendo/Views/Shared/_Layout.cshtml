@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="MenuPrincipal">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" asp-controller="CategoriaFront" asp-action="Index">
+                <img src="~/images/desaprendiendo.jpg" alt="el logo de la compañia" class="img-responsive" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link elementoMenu" id="Categoria-item" asp-area="" asp-controller="CategoriaFront" asp-action="Index">Categorias&nbsp;|&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link elementoMenu" id="Tripartita-item" asp-area="" asp-controller="CategoriaFront" asp-action="Tripartita">Tripartita&nbsp;|&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link elementoMenu" id="Metodologia-item" asp-area="" asp-controller="CategoriaFront" asp-action="Metodologia">Metodología&nbsp;|&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link elementoMenu" id="Nosotros-item" asp-area="" asp-controller="CategoriaFront" asp-action="Nosotros">Nosotros</a>
+                    </li>
+                </ul>
+
+
+            <form class="form-inline my-2 my-lg-0" asp-controller="SearchResults" asp-action="Index" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    @Html.TextBox("searchedText")
+
+                    @*<input class="form-control mr-sm-2" id="searchedText " name="searchedText " type="search" placeholder="Búsqueda" aria-label="Búsqueda">*@
+                    <button class="btn btn-outline-success my-2 my-sm-0 elementoPantallaSeleccionable" type="submit">Búsqueda</button>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top card-footer text-muted">
+        <div class="container">
+            &copy; 2019 - -Desaprendiendo - <a asp-area="" asp-controller="CategoriaFront" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/BreadCum.css" />
+    @RenderSection("Scripts", required: false)
+
+
+
+
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+</html>

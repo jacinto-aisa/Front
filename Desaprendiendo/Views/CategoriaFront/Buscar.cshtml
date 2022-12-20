@@ -1,0 +1,56 @@
+﻿@model Desaprendiendo.Models.DomainModel.Categoria
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>Categoria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categoria1" class="control-label"></label>
+                <input asp-for="Categoria1" class="form-control" />
+                <span asp-validation-for="Categoria1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComentarioHtml" class="control-label"></label>
+                <input asp-for="ComentarioHtml" class="form-control" />
+                <span asp-validation-for="ComentarioHtml" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagenMiniatura" class="control-label"></label>
+                <input asp-for="ImagenMiniatura" class="form-control" />
+                <span asp-validation-for="ImagenMiniatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagenGrande" class="control-label"></label>
+                <input asp-for="ImagenGrande" class="form-control" />
+                <span asp-validation-for="ImagenGrande" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

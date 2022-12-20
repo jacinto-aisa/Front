@@ -1,0 +1,309 @@
+﻿@model IEnumerable<Desaprendiendo.Models.DomainModel.Categoria>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNew.cshtml";
+}
+<section>
+    <article>
+        <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row" style="height:auto">
+                <div class="card col-sm-12">
+                    <p>
+                        <strong>Introducción</strong>,En muchas ocasiones, no sólo en el ámbito educativo o de formación, los sistemas se pueden entender
+                        mejor viéndolos en marcha, es por ello, que, con el fin de poder explicar el sistema, lo haga a través de un ejemplo.
+                    <p />
+                    <p>
+                        En dicho ejemplo vamos a tener aparte de esta introducción, un ámbito de aplicación, que nos mostrará cual es el producto sobre el que
+                        se realizará la formación y posteriormente un desarrollo siguiendo el ciclo que hemos marcado en la presentación de Microsoft PowerPoint
+                        que se ha mostrado anteriormente.
+                    <p />
+                    <p>
+                        Con el fin de establecer la correlación se marcará en cada fase y en rojo en que momento del sistema se encuentra la explicación.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-5">
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-top:10px;">
+                        <video src="~/images/VID_20180516_150738.mp4" type="video/mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mr-auto" style="margin: 20px;padding:20px;">
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO01.jpg" class="img-responsive" />
+                        <figcaption>Conocimiento del negocio</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        <strong>Ámbito de aplicación</strong>,Supongamos que tenemos que explicar una sección de las funcionalidades de Navision,
+                        cuando hablamos de Navision, lo hacemos nombrando de forma abreviada a Microsoft Dynamics Nav, cualquiera que fuese la versión.
+                    </p>
+                    <p>
+                        Navision es un programa, familia de los ERP (Gestión integral de empresa), como puede ser SAP u otros programas ERP gratuitos
+                        que se encuentran ahora mismo en el mercado.
+                    </p>
+                    <p>
+                        Dichos programas se usan para gestionar toda la estructura de una empresa de una forma globalizada, y sus funcionalidades están
+                        muy divididas por departamento. Por ejemplo, las funcionalidades del departamento de ventas, podrían ser generación de publicidad
+                        y marketing, generación de campañas de ventas, elaboración de ofertas y pedidos, estudio de la facturación, y otras funcionalidades.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-12">
+                    <p>
+                        <strong>Secuencia de pasos anteriores al inicio de la formación.</strong>Como voy a enseñar a resolver un problema, si desconozco el mismo.
+                        Codo dijo Séneca, que el que no sabe a que puerto se dirige, ningún viento le resulta favorable..
+                    </p>
+                    <p>
+                        En muchas ocasiones cuando doy la formación, los ejemplos que se proporcionan no se adecuan a la realidad de la empresa. Es posible que sea
+                        factible enseñar Excel con ejemplos de un carrito de la compra de un supermercado, pero ejemplos cercanos al negocio y reales suelen ser más
+                        motivantes y sencillos de comprender por las personas que forman la organización, que son a los que va dirigida la formación en último término.
+                    </p>
+                    <p>
+                        Para poder realizar esta fase el instructor deberá de desplazarse hacía las instalaciones del cliente o caso de ser el curso remoto o cualquier
+                        otra circunstancia, usar los manuales o directivas que usa la empresa para cada uno de los procesos ya sean productivos o de gestión.
+                        Como se comentaba anteriormente y acercándonos al ejemplo que vamos a seguir.
+                    </p>
+                    <p>
+                        La empresa XXX se dedica a la realización de cajas fuertes, buzones y también puede dedicarse simplemente a ser
+                        un intermediario para la venta de productos para hoteles, mini-bares, secadores de pelo, toalleros y otros
+                        productos relacionados.
+                        El formador YYY se desplaza a la empresa una tarde con el fin de hablar tanto con el responsable de ventas
+                        (a cuyo departamento va a ir dirigido la formación), así como algún otro responsable, en la visita a la fábrica
+                        el futuro formador entiende los procesos y apunta vocabulario técnico, principalmente para poder entender los
+                        pedidos de venta, el responsable de ventas, nos indica que suelen hacer acuerdos anuales con los clientes,
+                        relativos a precios, según cantidad, rappels de compra y descuentos personalizados.
+                    </p>
+                    <p>
+                        Actualmente tienen problemas a la hora de realizar pedidos, por lo que el instructor o formador del curso,
+                        detecta que no están usando todas las funcionalidades del producto, de hecho, desconocen que existan una serie
+                        de documentos que podría facilitarles mucho la gestión que ellos pretenden.
+                        Que hemos ganado con esto:
+                    </p>
+                    <ul>
+                        <li>
+                            Vocabulario de la empresa: Nombres y tipos (familias de productos), componentes de una caja fuerte
+                            o de un buzón, tipos de buzones, tipos de máquinas, sistema de producción de la empresa, bajo pedido, bajo stock, mixto.
+                        </li>
+                        <li>
+                            Comprender los procesos de la empresa: Y por tanto el formador poder ir creando pasos o secuencias de tal forma que
+                            se pueda planificar la formación siguiendo este sistema.
+                        </li>
+                        <li>
+                            -	Ver carencias, de tal forma que podemos ver que ha motivado la formación, porqué se va a realizar y que debe de suplir,
+                            en que se están equivocando o que parte del producto no saben manejar correctamente.
+                        </li>
+                    </ul>
+                    <p>
+                        En todos mis años como formador (más de 20 años), nunca he visto este actuación por parte de las empresas
+                        de formación o formadores individuales, limitándose a dar unos temas o contenidos que no se ajustan a la
+                        realidad de la empresa y por ende, tampoco van a ser familiares o sencillos de comprender, como ejemplo rápido,
+                        se puede enseñar a realizar un proyecto de construcción de una carretera en Project, usando como símil,
+                        la creación de una receta de cocina, pero realmente la atención y la aplicabilidad de este sistema, es menor
+                        que si trabajamos con elementos propios de la creación de una carretera, pavimento flexible, rígido,
+                        alquitranado, pintado, etc
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO02.jpg" class="img-responsive" />
+                        <figcaption>Elaboración del objetivo general</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        Como comentábamos antes, en la frase de Séneca, tenemos que definir objetivos, ver carencias como hemos realizado antes, una vez
+                        establecidos dichos objetivos y localizadas las carencias, el formador podrá iniciar la tercera fase de la división cuando tengamos
+                        el objetivo general definido.
+                    </p>
+                    <p>En nuestro caso, la empresa y el formador han definido los objetivos:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-12">
+                    <p>
+                        <ul>
+                            <li>
+                                Saber cómo completar correctamente la ficha de cliente (la ficha de cliente es la que nos proporciona toda la información
+                                de contacto de dicho cliente), actualmente los usuarios están introduciendo de forma incorrecta lo datos. Haciendo hincapié
+                                en los códigos de país y códigos postales ya que en muchas ocasiones son incorrectos y esto acarrea grandes problemas a la
+                                hora de la división de ventas, por país o ubicación geográfica.
+                            </li>
+                            <li>
+                                Las nuevas versiones de Navision han mejorado substancialmente el seguimiento de los clientes, mediante lo que es denominado
+                                interacciones con los clientes, en esas interacciones se almacenan todos los pedidos, quejas, devoluciones, llamadas y correos
+                                electrónicos con los clientes. No lo están usando.
+                            </li>
+                            <li>
+                                Saber cómo realizar pedidos de clientes con fechas aproximadas de terminación. Estos clientes serán clientes “normales”, aquellos
+                                que no son especiales (a los que se les aplica ningún sistema personalizado para su gestión.
+                            </li>
+                            <li>
+                                Saber cómo realizar pedidos cuyos precios estén basados en ofertas específicas que ha confeccionado el departamento de ventas.
+                                Se ha establecido una oferta para un cliente o una serie de clientes para unos productos determinados.
+                            </li>
+                            <li>
+                                Saber cómo realizar pedidos abiertos de venta, el pedido abierto es una nueva característica que el formador en la fase anterior
+                                a detectado que no usan de ninguna forma y que podría ser muy útil para cubrir las necesidades que tienen.
+                            </li>
+                        </ul>
+                        El formador con su experiencia y viendo la complejidad de la empresa, planifica cinco sesiones de cuatro horas, en total para cubrir
+                        los objetivos especificados se ha establecido por tanto un total de 20 horas lectivas, divididas a su vez en cinco sesiones de cuatro horas de duración.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO03.jpg" class="img-responsive" />
+                        <figcaption>Generación de acciones formativas propiamente dichas</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        Llegamos ahora si, una vez definidos objetivos y planificación, la fase iterativa, que se repetirá en cinco ocasiones, tantas como sesiones
+                        se han programado, que en nuestro caso han sido cinco. Este proceso es lo que se denomina la propia formación, las clases, la interacción del
+                        formador docente con los usuarios objetivo de la formación.
+                    </p>
+                    <p>
+                        Es cuando el diccionario, el vocabulario de la empresa, sus problemas y los objetivos de la formación se aúnan junto con los conocimientos del
+                        formador para llevar a buen puerto, la acción formativa.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-12">
+                    <p>
+                        Como podrá verse se va a detallar cada uno de los pasos de la iteración formativa siguiendo el mismo ejemplo y los objetivos fijados en las
+                        fases anteriores. Como el lector, podrá comprobar este nuevo sistema de formación implica también algunos nuevos conceptos, como el concepto de
+                        la sesión como un algo iterativo y completo, se han llegado a unos objetivos. El sistema de como alcanzar dichos objetivos de sesión dependerá de
+                        muchos factores, pero la idea fundamental es que el alumno, el usuario objetivo vea cada sesión como un todo, esto facilita la creación de cronogramas
+                        que para cursos especializados pueden dar lugar a la planificación de contenidos en fechas, de tal forma que si el trabajador o usuario objetivo
+                        tiene que faltar a alguna clase, por motivos de producción, calendario, sepa que se ha perdido o pueda elegir la clase que menos repercuta a su trabajo.
+                    </p>
+                    <p>
+                        Un ejemplo podría ser el supervisor de ventas, que estará muy interesado en el concepto de pedido de venta abierto, pero puede no querer saber que sistemas
+                        hay en la herramientas para la validación de países y códigos postales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO04.jpg" class="img-responsive" />
+                        <figcaption>Análisis de los objetivos</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        En esta iteración, se explica a los alumnos que problema se ha detectado y en que medida, que puede acarrear la errónea introducción de
+                        códigos postales o códigos de país y en que medida puede ser de utilidad el registro de las interacciones de los clientes, para su seguimiento
+                        y que puedan tener un registro secuencial de las acciones llevadas a cabo por el propio departamento de ventas independientemente de quien haya
+                        llevado a cabo la transacción.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO05.jpg" class="img-responsive" />
+                        <figcaption>Conceptos Teóricos</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        Siempre desde mi punto de vista deben de conocerse los conceptos teóricos sobre los que se apoya cualquier resolución técnica. Muchas veces lo
+                        explico como si un piloto de fórmula uno, no supiera nada de mecánica. Es posible que pilotara decentemente sin tener en mente el funcionamiento
+                        de un coche, pero el conocimiento de la máquina, del programa, la lógica, va a ayudar al alumno a comprender mejor la plataforma y puede servir
+                        como punto de partida para que el usuario pueda conocer y comprender otros elementos dentro de la misma solución.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-12">
+                    <p>
+                        En nuestro caso, debería de darse a los alumnos el conocimiento de que existen unas reglas de validación según el país, por ejemplo, los tipos de
+                        IVA soportados en cada uno de ellos, o bien los tipos de descuento o los precios de los productos, también un código de país bien introducido
+                        mejorará el análisis de ventas por país y el de códigos postales. Las validaciones por país no sólo se quedan allí, sino que ese conocimiento teórico
+                        y otros que se impartirán en cada una de las sesiones, ayudará al usuario\alumno a comprender mejor el funcionamiento de toda la plataforma.
+                    </p>
+                    <p>
+                        Las interacciones les van a permitir al hablar con un cliente o con un proveedor el tener en pantalla, todos los correos, ofertas, devoluciones
+                        e información del Cliente, con el fin de al hablar con él, poder ver no sólo los datos del cliente, sino todo lo que ha ido ocurriendo. Este estudio
+                        de las interacciones con los clientes permitirá al jefe de ventas, de un vistazo ver todo el movimiento que se ha realizado con un cliente,
+                        una agrupación de clientes.
+                    </p>
+                    <p>
+                        Aparece también el concepto de contacto que puede ser usado para poder registrar e informar de cuál es el agente de ventas correspondiente a dicho
+                        cliente.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-3">
+                    <figure>
+                        <img src="~/images/ILBO06.jpg" class="img-responsive" />
+                        <figcaption>Ejercicios Prácticos"</figcaption>
+                    </figure>
+                </div>
+                </div>
+            <div class="row">
+                <div class="card col-sm-8">
+                    <p>
+                        Los ejercicios prácticos van a permitir dos cosas importantes dentro de nuestro sistema de formación, por un lado, el repaso y consolidación
+                        de los conceptos teóricos, por otro una práctica orientada principalmente a resolver el objeto de esta iteración.
+                    </p>
+                    <p>
+                        Una práctica podría ser la definición de una serie de condiciones para un código de país determinado, así mismo también la definición de una
+                        serie de condiciones para la tupla país código postal, por ejemplo, posibilidades de IVA que se pueden introducir, descuentos, precios especiales,
+                        nombres de poblaciones. En el sentido de la interacción, podrían crearse y visualizarse una serie de contactos para un cliente ficticio.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-sm-12">
+                    <p>
+                        En nuestro caso, debería de darse a los alumnos el conocimiento de que existen unas reglas de validación según el país, por ejemplo, los tipos de
+                        IVA soportados en cada uno de ellos, o bien los tipos de descuento o los precios de los productos, también un código de país bien introducido
+                        mejorará el análisis de ventas por país y el de códigos postales. Las validaciones por país no sólo se quedan allí, sino que ese conocimiento teórico
+                        y otros que se impartirán en cada una de las sesiones, ayudará al usuario\alumno a comprender mejor el funcionamiento de toda la plataforma.
+                    </p>
+                    <p>
+                        Las interacciones les van a permitir al hablar con un cliente o con un proveedor el tener en pantalla, todos los correos, ofertas, devoluciones
+                        e información del Cliente, con el fin de al hablar con él, poder ver no sólo los datos del cliente, sino todo lo que ha ido ocurriendo. Este estudio
+                        de las interacciones con los clientes permitirá al jefe de ventas, de un vistazo ver todo el movimiento que se ha realizado con un cliente,
+                        una agrupación de clientes.
+                    </p>
+                    <p>
+                        Aparece también el concepto de contacto que puede ser usado para poder registrar e informar de cuál es el agente de ventas correspondiente a dicho
+                        cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

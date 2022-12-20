@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ModuloComp.ModuloComp>
+<div class="container-fluid"  style="margin-top: 10px;">
+    <div class="card-group">
+        @*<div class="card-columns">*@
+        <div class="row no-gutters">
+            @foreach (var item in Model)
+            {
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card border-dark text-white bg-warning h-100 rounded-lg">
+                    <div class="card-header d-flex align-items-center justify-content-center" style="background-color: cornflowerblue; min-height: 6rem;max-height:6rem;" >
+                        <h2 style="font-size: larger"> <strong>@item.TituloModulo</strong> </h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p> @Html.Raw(item.DescripcionModulo) </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ContentItem.ContentItem>
+<div class="container body-content">
+    <div class="container contenedor-general" style="margin-top: 10px;">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-4 elementoPantallaSeleccionable">
+                    <p class="titulo-Recuadro"> @item.Titulo</p>
+                    <div class="thumbnail">
+                        <a asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>
+                            <img src="data:image;base64,@System.Convert.ToBase64String(item.Imagen)" class="img-responsive imagen-Recuadro">
+                            <div class="texto-Recuadro">
+                                <p> @Html.Raw(item.ContenidoHTML) </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

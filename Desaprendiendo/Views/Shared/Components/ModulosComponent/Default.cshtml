@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.ModuloComp.ModuloComp>
+<div class="container body-content">
+    <div class="container contenedor-general" style="margin-top: 10px;">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-4 elementoPantallaSeleccionable">
+                    <h2 style="font-size: larger"> <strong>@item.TituloModulo</strong> </h2>
+                    <div class="thumbnail">
+                        <div class="caption" style="font-size:smaller">
+                            <p> @Html.Raw(item.DescripcionModulo) </p>
+                        </div>
+                        <div style="padding: 10px;">
+                            @*@foreach (Lección leccion in item.LeccionesDelModulo)
+                            {
+                                <button class="accordion">@Html.Label(leccion.Lección1)</button>
+                                <div class="panel">
+                                    <p style="font-size: x-small">@Html.Raw(leccion.ComentarioHtml)</p>
+                                </div>
+
+                            }*@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Desaprendiendo.Views.ViewComponents.ViewModels.BreadCum.Bread>
+<div class="container-fluid">
+    <div class="card-group">
+        <div class="row">
+            
+            @foreach (var item in Model)
+            {
+                <div class="card border-dark rounded mb-0" >
+                    <div class="card-header">
+                        <a class="stretched-link card-text" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>@item.Titulo</a>
+                    </div>
+                    @*@if (item.ImagenVisible)
+                    {
+                        <img class="card-img-top" src="data:image;base64,@System.Convert.ToBase64String(item.Imagen)" alt="Card image" />
+                    }*@
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@*<div class="container-fluid" style="margin-top: 10px;">
+        <div class="card-group">
+            <div class="row no-gutters">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card border-dark h-100 rounded mb-0">
+                            <img class="card-img-top" src="data:image;base64,@System.Convert.ToBase64String(item.Imagen)" alt="Card image">
+
+                            <div class="card-header">
+                                <a class="stretched-link" asp-controller=@item.Controlador asp-action=@item.Accion asp-route-id=@item.ParametroId>
+                                    <p> @item.Titulo</p>
+                                </a>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="card-text">
+                                    <p> @Html.Raw(item.ContenidoHTML) </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>*@

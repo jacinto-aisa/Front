@@ -1,0 +1,135 @@
+﻿@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.contenedor-Cards {
+
+}
+.elemento-Card {
+
+}
+.elementoPantallaSeleccionable {
+    border-radius: 15px 50px 30px;
+    background-color: #FF9900;
+    border: solid;
+    border-width: thick;
+    border-color: rgb(155,13,37);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    padding: 5px;
+    margin-right: auto;
+}
+.contenedor-general {
+    align-items: stretch;
+    flex-direction: column;
+}
+.imagen-Recuadro {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    width: 90%;
+}
+.titulo-Recuadro {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 2rem;
+    text-shadow: 2px 2px rgb(229, 161, 190);
+}
+.texto-Recuadro
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+.titulo-Modulo {
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 2rem;
+    text-shadow: 2px 2px rgb(229, 161, 190);
+}
+.titulo-Leccion {
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+.tituloCursoBreadcum {
+    font-size: 1rem;
+    font-style:italic;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.filaBreadcum {
+    border-radius: 50px 17px 10px;
+    background-color: #FF9900;
+    border: solid;
+    border-width: thick;
+    border-color: rgb(155,13,37);
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    margin-top: 5px;
+}
+.elementoBreadcum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenidoTripartita {
+    display: block;
+}
+figcaption
+{
+    font-size: smaller;
+}
+.filaCertificados {
+    display: flex;
+    align-content: flex-start;
+}
+#Categoria-item {
+    font-size: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    color: rgb(155,13,37) !important;
+}
+#Tripartita-item {
+    font-size: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    color: rgb(155,13,37) !important;
+}
+#Metodologia-item {
+    font-size: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    color: rgb(155,13,37) !important;
+}
+#Nosotros-item {
+    font-size: 1.5rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    color: rgb(155,13,37) !important;
+}
+
+.MenuPrincipal {
+    border-radius: 5px 17px 10px;
+    background-color: #FF9900;
+    border: solid;
+    border-width: thick;
+    border-color: rgb(155,13,37);
+    align-content: center;
+    align-items: center;
+ }
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.elementoMenu {
+    background-color: #FF9900;
+}
